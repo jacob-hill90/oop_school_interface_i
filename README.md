@@ -173,4 +173,3 @@ print(school.staff)
 print(school.students)
 ```
 
-
