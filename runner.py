@@ -1,7 +1,20 @@
-from classes.school import School 
+from classes.school import School
 from classes.student import Student
-from classes.staff import Staff
+from classes.person import Person
 
-school = School('Ridgemont High') 
+school = School('Pioneer High')
 
-print(Student.all_students())
+student_info = {
+    'name': 'jake',
+    'age': '17',
+    'role': 'student',
+    'student_id': '201178',
+    'password': 'robots',
+    'gpa': '3.5'
+}
+
+student = Student(**student_info)
+
+print(school.name)
+print(student.name)
+
